@@ -3,69 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FRUS Assist - 1993-2000, Volume XXIV, Europe: Policy, 1997-2000</title>
-  <meta name="description" content="Compiler Assist workspace for Foreign Relations of the United States, 1993-2000, Volume XXIV, Europe: Policy, 1997-2000." />
+  <title>FRUS Assist - 1993&ndash;2000, Volume XXIV, Europe: Policy, 1997&ndash;2000</title>
+  <meta name="description" content="Compiler Assist workspace for Foreign Relations of the United States, 1993&ndash;2000, Volume XXIV, Europe: Policy, 1997&ndash;2000." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-doc-id="frus1993-00v24">
   <header class="topbar">
     <nav class="nav" aria-label="Primary">
       <a class="brand" href="#top"><span class="mark">FA</span><span>FRUS Assist</span></a>
-      <div class="navlinks"><a href="#lanes">Lanes</a><a href="#sources">Sources</a><a href="https://github.com/therealjameswilson/frus-1993-00v24-assist" rel="noreferrer">GitHub</a><a href="https://therealjameswilson.github.io/Compiler-Assist/">Compiler Assist</a></div>
+      <div class="navlinks">
+        <a href="#dataset">Dataset</a>
+        <a href="#gaps">Gap Register</a>
+        <a href="https://github.com/therealjameswilson/frus-1993-00v24-assist" rel="noreferrer">GitHub</a>
+        <a href="https://therealjameswilson.github.io/Compiler-Assist/">Compiler Assist</a>
+      </div>
     </nav>
   </header>
   <main id="top">
     <section class="hero">
       <div class="hero-inner">
         <div>
-          <p class="kicker">Being Researched</p>
+          <p class="kicker">Being Researched &bull; synced May 29, 2026</p>
           <h1>Foreign Relations of the United States, 1993&ndash;2000, Volume XXIV, Europe: Policy, 1997&ndash;2000</h1>
-          <p class="summary">A lightweight compiler-facing workspace for staging research lanes, source leads, gap checks, and next-pull notes while the official volume is listed as being researched.</p>
-          <div class="hero-actions"><a class="button" href="https://history.state.gov/historicaldocuments/frus1993-00v24" rel="noreferrer">Official Volume Page</a><a class="button secondary" href="https://therealjameswilson.github.io/nara-scout/#q=XXIV+OR+Europe+OR+Policy&from=1993&to=2000&sort=relevance&perColl=25&perPage=50" rel="noreferrer">Open NARA Scout</a></div>
+          <p class="summary">A compiler-facing workspace for research lanes, source leads, document-candidate buckets, persons queues, chronology anchors, and open verification work.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://history.state.gov/historicaldocuments/frus1993-00v24" rel="noreferrer">Official Volume Page</a>
+            <a class="button secondary" href="https://therealjameswilson.github.io/nara-scout/#q=Europe%3A+Policy%2C+1997-2000&amp;from=1993&amp;to=2000&amp;sort=relevance&amp;perColl=25&amp;perPage=50" rel="noreferrer">Open NARA Scout</a>
+          </div>
         </div>
-        <div class="visual"><img src="assets/source-map.svg" alt="Compiler source map for 1993-2000, Volume XXIV, Europe: Policy, 1997-2000" /></div>
+        <div class="visual"><img src="assets/source-map.svg" alt="Compiler source map for 1993&ndash;2000, Volume XXIV, Europe: Policy, 1997&ndash;2000" /></div>
       </div>
     </section>
+
     <div class="shell">
-      <div class="meta-grid">
+      <section class="meta-grid" aria-label="Workspace status">
         <div class="meta"><span>Status</span><strong>Being Researched</strong></div>
         <div class="meta"><span>Official ID</span><strong>frus1993-00v24</strong></div>
         <div class="meta"><span>Era</span><strong>1993-2000</strong></div>
-        <div class="meta"><span>Workspace</span><strong>GitHub Pages</strong></div>
-      </div>
-      <section id="lanes">
-        <div class="section-head"><h2>Compiler Lanes</h2><a class="button secondary" style="background:var(--teal);color:#fff" href="https://therealjameswilson.github.io/nara-scout/#q=XXIV+OR+Europe+OR+Policy&from=1993&to=2000&sort=relevance&perColl=25&perPage=50" rel="noreferrer">Scout Records</a></div>
-        <div class="grid"><article class="card"><span class="tag">Lane 1</span><h3>Europe</h3><p>Collect chronology anchors, source pools, release status, and candidate document notes for this lane.</p></article>
-<article class="card"><span class="tag">Lane 2</span><h3>Policy</h3><p>Collect chronology anchors, source pools, release status, and candidate document notes for this lane.</p></article>
-<article class="card"><span class="tag">Lane 3</span><h3>Declassification and release gaps</h3><p>Collect chronology anchors, source pools, release status, and candidate document notes for this lane.</p></article>
-<article class="card"><span class="tag">Lane 4</span><h3>Persons and organizations</h3><p>Collect chronology anchors, source pools, release status, and candidate document notes for this lane.</p></article></div>
+        <div class="meta"><span>Data tables</span><strong>22</strong></div>
       </section>
+
+      <section>
+        <div class="section-head">
+          <h2>Research Lanes</h2>
+          <a class="button secondary dark" href="https://catalog.archives.gov/search?q=Europe%3A%20Policy%2C%201997-2000" rel="noreferrer">NARA Catalog</a>
+        </div>
+        <div class="grid lanes-grid" data-render="lanes"></div>
+      </section>
+
+      <section id="dataset">
+        <div class="section-head"><h2>Research Dataset</h2><button class="button secondary dark" data-export>Export JSON</button></div>
+        <div class="tabs" role="tablist" aria-label="Research dataset tables">
+          <button class="tab-button" type="button" data-tab="sources" aria-pressed="true">Sources</button>
+          <button class="tab-button" type="button" data-tab="documents" aria-pressed="false">Documents</button>
+          <button class="tab-button" type="button" data-tab="chronology" aria-pressed="false">Chronology</button>
+          <button class="tab-button" type="button" data-tab="persons" aria-pressed="false">Persons</button>
+        </div>
+        <div class="table-wrap" data-panel="sources">
+          <table><thead><tr><th>Lead</th><th>Category</th><th>Use</th><th>Status</th></tr></thead><tbody><tr><td>Official history.state.gov volume page</td><td>Official volume</td><td>Track title, status, and future publication metadata.</td><td>Seeded</td></tr>
+<tr><td>Status of the Series</td><td>Official status</td><td>Confirm the volume remains in the Being Researched production stage.</td><td>Seeded</td></tr>
+<tr><td>NARA Scout query</td><td>Search tool</td><td>Run a first-pass search for Europe: Policy, 1997-2000.</td><td>Seeded</td></tr>
+<tr><td>NARA Catalog search</td><td>Archives</td><td>Check catalog-visible record descriptions and scope notes.</td><td>Seeded</td></tr>
+<tr><td>William J. Clinton Presidential Library research portal</td><td>Presidential library</td><td>Check Clinton Library finding aids, digital collections, staff files, and FOIA releases.</td><td>Seeded</td></tr>
+<tr><td>State Department FOIA Virtual Reading Room</td><td>FOIA</td><td>Search released State Department records and source-note copy candidates.</td><td>Seeded</td></tr>
+<tr><td>Strobe Talbott FOIA Manifest</td><td>FOIA manifest</td><td>Cross-check Clinton-era high-level diplomatic records and document-page leads.</td><td>Seeded</td></tr>
+<tr><td>Europe companion workbench</td><td>Companion workbench</td><td>Use the richer existing workspace for volume-specific records and research notes.</td><td>Linked</td></tr></tbody></table>
+        </div>
+        <div class="table-wrap" data-panel="documents" hidden>
+          <table><thead><tr><th>Candidate bucket</th><th>Repository</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td>Official volume record and publication metadata</td><td>history.state.gov</td><td>Reference</td><td>Watch for title, status, and chapter updates.</td></tr>
+<tr><td>NARA catalog-visible candidate records</td><td>National Archives</td><td>Search queue</td><td>Export promising record descriptions and add file-unit identifiers.</td></tr>
+<tr><td>Presidential library meeting and daily-file leads</td><td>William J. Clinton Presidential Library research portal</td><td>Search queue</td><td>Check daily diary, staff files, and finding aids for dated contacts.</td></tr>
+<tr><td>Strobe Talbott FOIA cross-check set</td><td>State FOIA</td><td>Search queue</td><td>Compare manifest hits against volume lanes and source-note needs.</td></tr></tbody></table>
+        </div>
+        <div class="table-wrap" data-panel="chronology" hidden>
+          <table><thead><tr><th>Date</th><th>Anchor</th><th>Note</th><th>Status</th></tr></thead><tbody><tr><td>1993-01-01</td><td>Scope start anchor</td><td>Begin chronology review for 1993-2000.</td><td>Seeded</td></tr>
+<tr><td>2000-12-31</td><td>Scope end anchor</td><td>End chronology review for 1993-2000.</td><td>Seeded</td></tr>
+<tr><td>TBD</td><td>Europe: Policy decision points</td><td>Add public statements, high-level contacts, interagency meetings, and crisis milestones.</td><td>Queue</td></tr></tbody></table>
+        </div>
+        <div class="table-wrap" data-panel="persons" hidden>
+          <table><thead><tr><th>Role</th><th>Status</th><th>Action</th><th>Era</th></tr></thead><tbody><tr><td>President of the United States</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr>
+<tr><td>Secretary of State</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr>
+<tr><td>National Security Advisor</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr>
+<tr><td>Deputy Secretary of State</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr>
+<tr><td>Executive Secretary of the Department of State</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr>
+<tr><td>FRUS volume compiler</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr>
+<tr><td>Assistant Secretary for European Affairs</td><td>Roster target</td><td>Verify names, dates, title changes, and source-note form before moving to a print roster.</td><td>1993-2000</td></tr></tbody></table>
+        </div>
+      </section>
+
       <section id="sources">
         <div class="section-head"><h2>Source Launchpad</h2></div>
-        <div class="source-list">
-          <a class="source" href="https://history.state.gov/historicaldocuments/frus1993-00v24" rel="noreferrer"><strong>Official History.state.gov volume page</strong><span>Volume</span></a>
-          <a class="source" href="https://history.state.gov/historicaldocuments/status-of-the-series" rel="noreferrer"><strong>Status of the Series</strong><span>Status</span></a>
-          <a class="source" href="https://therealjameswilson.github.io/nara-scout/#q=XXIV+OR+Europe+OR+Policy&from=1993&to=2000&sort=relevance&perColl=25&perPage=50" rel="noreferrer"><strong>NARA Scout query</strong><span>XXIV OR Europe OR Policy</span></a>
-          <a class="source" href="https://therealjameswilson.github.io/strobe-talbott-foia/" rel="noreferrer"><strong>Strobe Talbott FOIA Manifest</strong><span>Support</span></a>
-          <a class="source" href="https://therealjameswilson.github.io/Clinton-Europe/" rel="noreferrer"><strong>Clinton Europe assister</strong><span>Companion</span></a>
-        </div>
+        <div class="source-list" data-render="source-links"></div>
       </section>
-      <section>
-        <div class="section-head"><h2>Starter Checklist</h2></div>
-        <div class="grid">
-          <article class="card"><h3>1. Chronology anchors</h3><p>Start with dated public, released, and catalog-visible records. Mark unclear dates and source-copy status early.</p></article>
-          <article class="card"><h3>2. Source pools</h3><p>Separate official documentary candidates from finding-aid leads, collection leads, and context-only records.</p></article>
-          <article class="card"><h3>3. Gap review</h3><p>Track missing presidential contacts, interagency decision points, release blockers, and likely declassification queues.</p></article>
-        </div>
+
+      <section id="gaps">
+        <div class="section-head"><h2>Gap Register</h2><a class="button secondary dark" href="reports/gap-register.md">Open Report</a></div>
+        <div class="gap-list" data-render="gaps"></div>
       </section>
+
       <section>
-        <div class="section-head"><h2>Local Working Notes</h2><button class="button secondary" style="background:var(--teal);color:#fff;border:0" data-copy="1993-2000, Volume XXIV, Europe: Policy, 1997-2000">Copy Title</button></div>
+        <div class="section-head"><h2>Local Working Notes</h2><button class="button secondary dark" data-copy="1993-2000, Volume XXIV, Europe: Policy, 1997-2000">Copy Title</button></div>
         <textarea id="notes" class="note-area" placeholder="Draft pull notes, search strings, unresolved source questions, and next actions. Saved locally in this browser."></textarea>
       </section>
+
+      <section><div class="section-head"><h2>Companion Workbench</h2></div><a class="source wide" href="https://therealjameswilson.github.io/Clinton-Europe/" rel="noreferrer"><strong>Europe companion workbench</strong><span>Existing richer workspace for Europe: Policy, 1997&ndash;2000</span></a></section>
     </div>
   </main>
   <footer class="footer"><div class="footer-inner">Generated from the Office of the Historian Status of the Series page. This workspace is a compiler aid, not an official FRUS publication.</div></footer>
   <script src="data/volume.js"></script>
+  <script src="data/research.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

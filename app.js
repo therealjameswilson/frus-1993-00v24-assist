@@ -1,14 +1,1 @@
-const notes = document.querySelector("#notes");
-const key = `frus-notes:${document.body.dataset.docId}`;
-if (notes) {
-  notes.value = localStorage.getItem(key) || "";
-  notes.addEventListener("input", () => localStorage.setItem(key, notes.value));
-}
-for (const button of document.querySelectorAll("[data-copy]")) {
-  button.addEventListener("click", async () => {
-    await navigator.clipboard.writeText(button.dataset.copy);
-    const old = button.textContent;
-    button.textContent = "Copied";
-    setTimeout(() => (button.textContent = old), 1200);
-  });
-}
+const notes=document.querySelector("#notes");const key=`frus-notes:${document.body.dataset.docId}`;if(notes){notes.value=localStorage.getItem(key)||"";notes.addEventListener("input",()=>localStorage.setItem(key,notes.value))}for(const button of document.querySelectorAll("[data-copy]")){button.addEventListener("click",async()=>{await navigator.clipboard.writeText(button.dataset.copy);const old=button.textContent;button.textContent="Copied";setTimeout(()=>button.textContent=old,1200)})}const data=window.FRUS_RESEARCH;const lanes=document.querySelector('[data-render="lanes"]');if(lanes&&data){lanes.innerHTML=data.lanes.map(lane=>`<article class="card"><span class="tag">${lane.status}</span><h3>${lane.label}</h3><p>${lane.next_action}</p></article>`).join("")}const sourceLinks=document.querySelector('[data-render="source-links"]');if(sourceLinks&&data){sourceLinks.innerHTML=data.source_leads.map(lead=>`<a class="source" href="${lead.url}" rel="noreferrer"><strong>${lead.label}</strong><span>${lead.category}</span></a>`).join("")}const gaps=document.querySelector('[data-render="gaps"]');if(gaps&&data){gaps.innerHTML=data.gap_register.map(gap=>`<article class="gap"><h3>${gap.area}</h3><p><strong>Fix:</strong> ${gap.fix}</p><p><strong>Status:</strong> ${gap.status}</p></article>`).join("")}for(const button of document.querySelectorAll(".tab-button")){button.addEventListener("click",()=>{for(const item of document.querySelectorAll(".tab-button"))item.setAttribute("aria-pressed",String(item===button));for(const panel of document.querySelectorAll("[data-panel]"))panel.hidden=panel.dataset.panel!==button.dataset.tab})}const exportButton=document.querySelector("[data-export]");if(exportButton&&data){exportButton.addEventListener("click",async()=>{await navigator.clipboard.writeText(JSON.stringify(data,null,2));const old=exportButton.textContent;exportButton.textContent="Copied JSON";setTimeout(()=>exportButton.textContent=old,1200)})}
