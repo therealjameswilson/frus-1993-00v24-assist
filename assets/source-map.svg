@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="Compiler source map">
+  <rect width="900" height="560" fill="#f7f1e4"/>
+  <rect x="54" y="58" width="792" height="444" rx="16" fill="#fffdf8" stroke="#d9d2c4" stroke-width="3"/>
+  <path d="M90 392 C190 318 294 338 390 290 C480 244 570 250 688 188 C734 164 784 150 826 146" fill="none" stroke="#1c6b68" stroke-width="12" stroke-linecap="round" opacity=".88"/>
+  <g fill="#9f342e"><circle cx="150" cy="356" r="12"/><circle cx="306" cy="324" r="12"/><circle cx="478" cy="252" r="12"/><circle cx="646" cy="206" r="12"/><circle cx="794" cy="154" r="12"/></g>
+  <g fill="#253331" font-family="Georgia,serif" font-weight="700"><text x="88" y="118" font-size="30">FRUS Compiler Assist</text><text x="88" y="158" font-size="20">1993-2000, Volume XXIV, Europe: Policy, 1997-2000</text></g>
+  <g fill="#b27b2d" opacity=".92"><rect x="92" y="428" width="162" height="20" rx="4"/><rect x="276" y="428" width="210" height="20" rx="4"/><rect x="512" y="428" width="128" height="20" rx="4"/><rect x="664" y="428" width="116" height="20" rx="4"/></g>
+</svg>
