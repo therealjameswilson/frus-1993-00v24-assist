@@ -21,3 +21,7 @@ Official volume page:
 - Source starter report in `reports/source-starter.md`.
 
 Generated from the history.state.gov Status of the Series snapshot checked on May 29, 2026.
+
+## October 30, 2026 release integration
+
+The research dataset and searchable Sources, Documents and Chronology tabs include pending documentary leads from the October 30 posting. See `reports/october-30-release-review.md` for exact physical-page evidence, historical/transmission dates, compiler rationale and gaps. Covers and translations remain distinct from substantive contacts. Existing local working-note storage is unchanged.

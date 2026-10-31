@@ -14,3 +14,7 @@ Checked: May 29, 2026
 | gap-004 | Persons | No persons queue. | Added role-based persons roster queue for verification and name expansion. | Seeded; needs name verification |
 | gap-005 | Chronology | No chronology table. | Added scope anchors and lane-specific chronology queues. | Seeded; needs event extraction |
 | gap-006 | Companion workbench | Existing richer workbench was not consistently linked. | Linked Europe companion workbench. | Closed |
+
+## October 30 release work
+
+Document candidates now carry physical-page links, date evidence and source gaps. Selection, facsimile and archival-copy comparison remain pending. See [the release review](october-30-release-review.md). Dini February 16/17, 1997 and Cook October 6/7, 1998 are kept outside the dated chronology until resolved.

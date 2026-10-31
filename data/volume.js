@@ -21,7 +21,7 @@ window.FRUS_VOLUME = {
     "Europe",
     "1997-2000"
   ],
-  "nara_scout_url": "https://therealjameswilson.github.io/nara-scout/#q=Europe%3A+Policy%2C+1997-2000&from=1993&to=2000&sort=relevance&perColl=25&perPage=50",
+  "nara_scout_url": "https://therealjameswilson.github.io/nara-scout/#q=Europe%3A+Policy%2C+1997-2000&from=1997&to=2000&sort=relevance&perColl=25&perPage=50",
   "nara_catalog_url": "https://catalog.archives.gov/search?q=Europe%3A%20Policy%2C%201997-2000",
   "companion": [
     "Europe companion workbench",
