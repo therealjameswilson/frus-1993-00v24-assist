@@ -30,7 +30,15 @@ const notes=document.querySelector("#notes");const key=`frus-notes:${document.bo
       if (i) pages.append(' · ');
       pages.append(link(String(page), item.pdfUrl + '#page=' + page));
     });
-    details.append(pages, textNode('p', 'Pending compiler selection. Extracted page text/OCR reviewed; facsimile, source-copy and archival provenance verification remain open.'));
+    details.append(pages);
+    (item.searchableText || []).slice(0, 3).forEach(page => details.append(textNode('p', 'PDF p. ' + page.page + ': ' + (page.text || '').slice(0, 1400))));
+    if (item.copyCitation) {
+      const copy = textNode('button', 'Copy source citation');
+      copy.type = 'button';
+      copy.addEventListener('click', async () => { await navigator.clipboard.writeText(item.copyCitation); copy.textContent = 'Copied'; setTimeout(() => copy.textContent = 'Copy source citation', 1200); });
+      details.append(copy);
+    }
+    details.append(textNode('p', 'Pending compiler selection. Extracted page text/OCR requires facsimile verification; no archival provenance is inferred.'));
     return details;
   }
   const matches = (item, query) => !query || JSON.stringify(item).toLocaleLowerCase().includes(query);
@@ -44,7 +52,7 @@ const notes=document.querySelector("#notes");const key=`frus-notes:${document.bo
       const release = item.releaseEvidence;
       const title = cell(link(item.title, item.url));
       title.append(textNode('p', item.date));
-      const action = release ? cell(textNode('p', release.summary), textNode('p', 'Compiler use: ' + release.compilerUse), evidence(release)) : cell(item.action);
+      const action = release ? cell(textNode('p', release.summary), textNode('p', 'Compiler use: ' + release.compilerUse), evidence({...release, searchableText:item.searchableText, copyCitation:item.copyCitation})) : cell(item.action);
       return row(title, cell(item.repository), cell(item.status), action);
     }));
     bodyFor('chronology')?.replaceChildren(...chronology.sort((a,b)=>a.date.localeCompare(b.date)).map(item => {
